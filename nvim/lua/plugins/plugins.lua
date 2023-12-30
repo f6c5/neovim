@@ -72,7 +72,7 @@ return packer.startup(function(use)
     -- LSP
     use {"neovim/nvim-lspconfig"}
 
-    -- simple to use language server installer
+    -- simple to use language server installewr
     use {"williamboman/mason.nvim"}
     use {"williamboman/mason-lspconfig.nvim"}
 
@@ -84,11 +84,7 @@ return packer.startup(function(use)
     use {"nvim-telescope/telescope.nvim"}
 
     -- Treesitter
-    use {'tjdevries/colorbuddy.vim', {
-        'nvim-treesitter/nvim-treesitter',
-        opt = true
-    }}
-
+    use {"nvim-treesitter/nvim-treesitter", {run= ":TSUpdate"}}
     -- Git
     use {"lewis6991/gitsigns.nvim"}
 

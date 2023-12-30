@@ -1,12 +1,18 @@
 local servers = {
-	"lua_ls",
-	-- "cssls",
-	-- "html",
-	-- "tsserver",
-	"pyright",
-	-- "bashls",
-	"jsonls",
-	-- "yamlls",
+	"bashls",
+  "clangd",
+  "csharp_ls",
+  "cssls",
+  "html",
+  "htmx",
+  "jsonls",
+  -- "quick_lint_js",
+  "tsserver",
+  "lua_ls",
+  "marksman",
+  "ruby_ls",
+  "sqlls",
+  "volar",
 }
 
 local settings = {

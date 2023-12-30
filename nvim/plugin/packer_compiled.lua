@@ -119,11 +119,6 @@ _G.packer_plugins = {
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
-  ["colorbuddy.vim"] = {
-    loaded = true,
-    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\colorbuddy.vim",
-    url = "https://github.com/tjdevries/colorbuddy.vim"
-  },
   ["dracula.nvim"] = {
     loaded = true,
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim",
@@ -190,9 +185,8 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
-    loaded = false,
-    needs_bufread = false,
-    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\opt\\nvim-treesitter",
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-ts-context-commentstring"] = {
