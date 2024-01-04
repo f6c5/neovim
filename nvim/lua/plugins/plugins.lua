@@ -40,6 +40,7 @@ return packer.startup(function(use)
 
     use {"nvim-lua/plenary.nvim"}
     use {"windwp/nvim-autopairs"}
+    use {'windwp/nvim-ts-autotag'}
     use {"numToStr/Comment.nvim"}
     use {"JoosepAlviste/nvim-ts-context-commentstring"}
     use {"nvim-tree/nvim-web-devicons"}
@@ -59,24 +60,23 @@ return packer.startup(function(use)
 
     -- Cmp 
     use {"hrsh7th/nvim-cmp"}
-    use {"hrsh7th/cmp-buffer"}
-    use {"hrsh7th/cmp-path"}
-    use {"saadparwaiz1/cmp_luasnip"}
     use {"hrsh7th/cmp-nvim-lsp"}
     use {"hrsh7th/cmp-nvim-lua"}
+    use {"saadparwaiz1/cmp_luasnip"}
+    use {"hrsh7th/cmp-buffer"}
+    use {"hrsh7th/cmp-path"}
+    use {"hrsh7th/cmp-cmdline"}
 
     -- Snippets
     use {"L3MON4D3/LuaSnip"}
     use {"rafamadriz/friendly-snippets"}
 
-    -- LSP
-    use {"neovim/nvim-lspconfig"}
-
     -- simple to use language server installewr
     use {"williamboman/mason.nvim"}
     use {"williamboman/mason-lspconfig.nvim"}
 
-    -- for formatters and linters
+    -- LSP
+    use {"neovim/nvim-lspconfig"}
     use {"jose-elias-alvarez/null-ls.nvim"}
     use {"RRethy/vim-illuminate"}
 
@@ -84,7 +84,11 @@ return packer.startup(function(use)
     use {"nvim-telescope/telescope.nvim"}
 
     -- Treesitter
-    use {"nvim-treesitter/nvim-treesitter", {run= ":TSUpdate"}}
+    use {"nvim-treesitter/nvim-treesitter", {
+        build = ":TSUpdate"
+    }}
+    use {'axelvc/template-string.nvim'}
+
     -- Git
     use {"lewis6991/gitsigns.nvim"}
 
