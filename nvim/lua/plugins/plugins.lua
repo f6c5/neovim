@@ -54,6 +54,21 @@ return packer.startup(function(use)
     use {"lukas-reineke/indent-blankline.nvim"}
     use {"goolord/alpha-nvim"}
     use {"folke/which-key.nvim"}
+    use {
+        "smjonas/inc-rename.nvim",
+        config = function()
+            require("inc_rename").setup()
+        end
+    }
+    use {'stevearc/dressing.nvim'}
+    use {'folke/neodev.nvim'}
+    use {"ap/vim-css-color"}
+
+    use {"maxmellon/vim-jsx-pretty"}
+    use {"yuezk/vim-js"}
+    use {"tpope/vim-surround"}
+    use {"rcarriga/nvim-notify"}
+    use {"j-hui/fidget.nvim"}
 
     -- Colorschemes
     use {'Mofiqul/dracula.nvim'}
@@ -68,10 +83,12 @@ return packer.startup(function(use)
     use {"hrsh7th/cmp-cmdline"}
 
     -- Snippets
-    use {"L3MON4D3/LuaSnip"}
-    use {"rafamadriz/friendly-snippets"}
+    use {
+        "L3MON4D3/LuaSnip",
+        dependencies = {"rafamadriz/friendly-snippets"}
+    }
 
-    -- simple to use language server installewr
+    -- simple to use language server installer
     use {"williamboman/mason.nvim"}
     use {"williamboman/mason-lspconfig.nvim"}
 
@@ -84,9 +101,10 @@ return packer.startup(function(use)
     use {"nvim-telescope/telescope.nvim"}
 
     -- Treesitter
-    use {"nvim-treesitter/nvim-treesitter", {
+    use {
+        "nvim-treesitter/nvim-treesitter",
         build = ":TSUpdate"
-    }}
+    }
     use {'axelvc/template-string.nvim'}
 
     -- Git

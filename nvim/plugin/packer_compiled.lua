@@ -129,10 +129,15 @@ _G.packer_plugins = {
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
-  ["friendly-snippets"] = {
+  ["dressing.nvim"] = {
     loaded = true,
-    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
-    url = "https://github.com/rafamadriz/friendly-snippets"
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\dressing.nvim",
+    url = "https://github.com/stevearc/dressing.nvim"
+  },
+  ["fidget.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -143,6 +148,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\impatient.nvim",
     url = "https://github.com/lewis6991/impatient.nvim"
+  },
+  ["inc-rename.nvim"] = {
+    config = { "\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15inc_rename\frequire\0" },
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\inc-rename.nvim",
+    url = "https://github.com/smjonas/inc-rename.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -164,6 +175,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  ["neodev.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neodev.nvim",
+    url = "https://github.com/folke/neodev.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\null-ls.nvim",
@@ -183,6 +199,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-notify"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-notify",
+    url = "https://github.com/rcarriga/nvim-notify"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
@@ -244,10 +265,30 @@ _G.packer_plugins = {
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-css-color",
+    url = "https://github.com/ap/vim-css-color"
+  },
   ["vim-illuminate"] = {
     loaded = true,
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-js"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-js",
+    url = "https://github.com/yuezk/vim-js"
+  },
+  ["vim-jsx-pretty"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-jsx-pretty",
+    url = "https://github.com/maxmellon/vim-jsx-pretty"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["which-key.nvim"] = {
     loaded = true,
@@ -257,6 +298,10 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: inc-rename.nvim
+time([[Config for inc-rename.nvim]], true)
+try_loadstring("\27LJ\2\n8\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\15inc_rename\frequire\0", "config", "inc-rename.nvim")
+time([[Config for inc-rename.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

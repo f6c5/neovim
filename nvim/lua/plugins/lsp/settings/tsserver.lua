@@ -9,6 +9,9 @@ return {
                 includeInlayPropertyDeclarationTypeHints = true,
                 includeInlayFunctionLikeReturnTypeHints = true,
                 includeInlayEnumMemberValueHints = true
+            },
+            completion = {
+                callSnippet = "Replace"
             }
         },
         javascript = {
@@ -20,6 +23,9 @@ return {
                 includeInlayPropertyDeclarationTypeHints = true,
                 includeInlayFunctionLikeReturnTypeHints = true,
                 includeInlayEnumMemberValueHints = true
+            },
+            completion = {
+                callSnippet = "Replace"
             }
         }
     }
