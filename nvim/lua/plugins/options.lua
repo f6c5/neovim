@@ -1,6 +1,5 @@
 local options = {
 
-    background = 'dark',
     backup = false,
     breakindent = true,
     clipboard = {"unnamed", "unnamedplus"},

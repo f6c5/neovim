@@ -1,3 +1,10 @@
+local status_ok, ibl = pcall(require, "ibl")
+if not status_ok then
+	vim.notify("ibl paketi yüklenemedi", "ERROR")
+    return
+end
+
+
 local highlight = {
     "RainbowRed",
     "RainbowYellow",
@@ -20,4 +27,4 @@ hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
     vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#56B6C2" })
 end)
 
-require("ibl").setup { indent = { highlight = highlight } }
+ibl.setup { indent = { highlight = highlight } }

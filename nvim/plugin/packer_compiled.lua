@@ -240,6 +240,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\popup.nvim",
+    url = "https://github.com/nvim-lua/popup.nvim"
+  },
   ["project.nvim"] = {
     loaded = true,
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\project.nvim",
@@ -284,11 +289,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-jsx-pretty",
     url = "https://github.com/maxmellon/vim-jsx-pretty"
-  },
-  ["vim-surround"] = {
-    loaded = true,
-    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-surround",
-    url = "https://github.com/tpope/vim-surround"
   },
   ["which-key.nvim"] = {
     loaded = true,

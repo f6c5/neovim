@@ -1,14 +1,7 @@
-local notify_ok, notify = pcall(require, "nvim-notify")
-if not notify_ok then
-    return
-end
-
-notify.setup()
-
-local fidget_ok, fidget = pcall(require, "fidget")
-if not fidget_ok then
+local status_ok, fidget = pcall(require, "fidget")
+if not status_ok then
+	vim.notify("fidget paketi yüklenemedi", "ERROR")
     return
 end
 
 fidget.setup()
-

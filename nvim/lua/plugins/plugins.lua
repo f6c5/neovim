@@ -39,6 +39,8 @@ return packer.startup(function(use)
     use {"wbthomason/packer.nvim"}
 
     use {"nvim-lua/plenary.nvim"}
+    use {"nvim-lua/popup.nvim"}
+    use {"rcarriga/nvim-notify"}
     use {"windwp/nvim-autopairs"}
     use {'windwp/nvim-ts-autotag'}
     use {"numToStr/Comment.nvim"}
@@ -66,8 +68,6 @@ return packer.startup(function(use)
 
     use {"maxmellon/vim-jsx-pretty"}
     use {"yuezk/vim-js"}
-    use {"tpope/vim-surround"}
-    use {"rcarriga/nvim-notify"}
     use {"j-hui/fidget.nvim"}
 
     -- Colorschemes
