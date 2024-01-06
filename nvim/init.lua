@@ -22,7 +22,7 @@ require "plugins.alpha"
 require "plugins.whichkey"
 require "plugins.autotag"
 require "plugins.dressing"
-require "plugins.other"
+require "plugins.fidget"
 
 
 local username = vim.fn.getenv("USERNAME") or "isimsiz"
