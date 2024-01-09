@@ -25,7 +25,6 @@ require "plugins.dressing"
 require "plugins.fidget"
 require "plugins.noice"
 -- require "plugins.chatgpt"
-
 local username = vim.fn.getenv("USERNAME") or "isimsiz"
 
 vim.notify("Hoşgeldiniz " .. username .. "!", "INFO", {
