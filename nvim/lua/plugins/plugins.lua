@@ -58,12 +58,6 @@ return packer.startup(function(use)
   use { "goolord/alpha-nvim" }
   use { "folke/which-key.nvim" }
   use { "folke/noice.nvim" }
-  use {
-    "smjonas/inc-rename.nvim",
-    config = function()
-      require("inc_rename").setup()
-    end
-  }
   use { 'stevearc/dressing.nvim' }
   use { 'folke/neodev.nvim' }
   use { "ap/vim-css-color" }
@@ -104,9 +98,7 @@ return packer.startup(function(use)
 
   -- Treesitter
   use {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate"
-  }
+    "nvim-treesitter/nvim-treesitter" }
   use { 'axelvc/template-string.nvim' }
 
   -- Git
@@ -116,17 +108,7 @@ return packer.startup(function(use)
   -- use { "jackMort/ChatGPT.nvim" }
 
   --codeium
-  use {
-    'Exafunction/codeium.vim',
-    config = function()
-      vim.keymap.set('i', '<C-g>', function() return vim.fn['codeium#Accept']() end, { expr = true, silent = true })
-      vim.keymap.set('i', '<c-;>', function() return vim.fn['codeium#CycleCompletions'](1) end,
-        { expr = true, silent = true })
-      vim.keymap.set('i', '<c-,>', function() return vim.fn['codeium#CycleCompletions'](-1) end,
-        { expr = true, silent = true })
-      vim.keymap.set('i', '<c-x>', function() return vim.fn['codeium#Clear']() end, { expr = true, silent = true })
-    end
-  }
+  use { 'Exafunction/codeium.nvim' }
 
   if PACKER_BOOTSTRAP then
     require("packer").sync()
