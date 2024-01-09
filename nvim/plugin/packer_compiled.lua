@@ -180,6 +180,16 @@ _G.packer_plugins = {
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neodev.nvim",
     url = "https://github.com/folke/neodev.nvim"
   },
+  ["noice.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\noice.nvim",
+    url = "https://github.com/folke/noice.nvim"
+  },
+  ["nui.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nui.nvim",
+    url = "https://github.com/MunifTanjim/nui.nvim"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "C:\\Users\\cicek\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\null-ls.nvim",
