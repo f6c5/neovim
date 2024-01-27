@@ -24,6 +24,7 @@ require "plugins.autotag"
 require "plugins.dressing"
 require "plugins.fidget"
 require "plugins.noice"
+
 -- require "plugins.chatgpt"
 require "plugins.codeium"
 

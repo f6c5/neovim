@@ -61,6 +61,17 @@ return packer.startup(function(use)
   use { 'stevearc/dressing.nvim' }
   use { 'folke/neodev.nvim' }
   use { "ap/vim-css-color" }
+  use {
+    "utilyre/barbecue.nvim",
+    tag = "*",
+    requires = {
+      "SmiteshP/nvim-navic",
+    },
+    config = function()
+      require("barbecue").setup()
+    end,
+  }
+  use { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' }
 
   use { "maxmellon/vim-jsx-pretty" }
   use { "yuezk/vim-js" }
